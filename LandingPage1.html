@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<head>
+  <title> OS Final Project </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="LandingPage1.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="<link rel=" preconnect href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+
+<body id="mainbody">
+  <div class="nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:beige">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="../images/logo.png" alt="" width="40" height="24" class="d-inline-block">
+          Team 3
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="SchedAlgo.html">Scheduling Algorithms</a>
+            </li>
+
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Developers
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Malhar Pandya</a></li>
+                <li><a class="dropdown-item" href="#">Viraj Bhagiya</a></li>
+                <li><a class="dropdown-item" href="#">Mansi Bhadani</a></li>
+                <li><a class="dropdown-item" href="#">Rushin Bhatt</a></li>
+                <li><a class="dropdown-item" href="#">Sakshi Thakkar</a></li>
+
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="teamInfo.html">Know more about the team -></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="image">
+  </div>
+  <div class="whole">
+    <div class="mtitle">
+      <img src="../images/Mtitle1.png" alt="background" class="bg">
+    </div>
+    <div class="title">
+      <br>
+      <br>
+      <h1 class="oshead"> Operating System Algorithms </h1>
+      <br>
+    </div>
+    <div class="content1">
+      <div class="c1sub">
+        <p> Operating System lies in the category of system software. It basically manages all the resources of the
+          computer. An operating system acts as an interface between the software and different parts of the computer or
+          the
+          computer hardware. The operating system is designed in such a way that it can manage the overall resources and
+          operations of the computer.</p>
+        <br>
+        <p>A Process Scheduler schedules different processes to be assigned to the CPU based on particular scheduling
+          algorithms. There are many types of scheduling algorithms available, some for CPU scheduling whereas some are
+          for
+          page replacement. This website houses simulators based on 3 different scheduling algorithms and a
+          synchronization
+          problem. You can check them below.</p>
+        <br>
+      </div>
+    </div>
+    <div class="links">
+      <br>
+      <p class="link"><a href="#SJF"> Shortest Job First </a></li>
+        <br>
+      <p class="link"><a href="#DP"> Dining Philosophers </a></li>
+        <br>
+      <p class="link"><a href="#look"> Look/C-Look </a></li>
+        <br>
+      <p class="link"><a href="#fifo"> FIFO page replacement </a></li>
+        <br>
+        <br>
+    </div>
+    <section id="SJF">
+
+      <div class="scontent1">
+        <br>
+        <img src="../images/sjf.jpg" alt="Image description" class="simages">
+        <div>
+          <br>
+          <div class="shead2">
+            <h3>Sometimes, it's good to be early</h3>
+            <br>
+            <p> The Shortest Job First or the Shortest Job Next is a C.P.U. scheduling algorithm which has the burst
+              time
+              of
+              a process as its selection criteria.</p>
+            <p> This simply means that when 2 processes arrive at the same time, the process with the shorter burst
+              time
+              will be executed first.</p>
+          </div>
+          <p class="link2"><a href="P1Sim.html"> Use the simulator now!! </a></p>
+          <hr>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="DP">
+
+      <div class="scontent2">
+        <br>
+        <img src="../images/dine.jpg" alt="Image description" class="simages">
+        <div>
+          <br>
+          <div class="shead2">
+            <h3>What if your entire life was just eating and thinking?</h3>
+            <br>
+            <p> The Dining Philosophers' problem is a situation wherein there are 'n' philosophers with the same
+              number
+              of
+              forks on a single table.</p>
+            <p> This is basically a synchronization problem which is solved by changing the rule for the last
+              philosopher, which is simply the reversal of the order.
+            </p>
+          </div>
+          <p class="link2"><a href="P2Sim.html"> Use the simulator now!! </a></p>
+
+          <hr>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="look">
+
+      <div class="scontent1">
+        <br>
+        <img src="../images/look.jpeg" alt="Image description" class="simages">
+        <div>
+          <br>
+          <div class="shead2">
+            <h3>How are tracks accessed in a disk?</h3>
+            <br>
+            <p> LOOK is the advanced version of SCAN (elevator) disk scheduling algorithm which gives slightly better
+              seek
+              time than any other algorithm</p>
+            <p> C-LOOK is an enhanced version of both SCAN as well as LOOK disk scheduling algorithms. This algorithm
+              also
+              uses the idea of wrapping the tracks as a circular cylinder as C-SCAN algorithm.</p>
+          </div>
+          <p class="link2"><a href="P3Sim.html"> Use the simulator now!! </a></p>
+
+          <hr>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="fifo">
+
+      <div class="scontent2">
+        <br>
+        <img src="../images/fifo.jpeg" alt="Image description" class="simages">
+        <div>
+          <br>
+          <div class="shead2">
+            <h3>The oldest should make way for the youngest</h3>
+            <br>
+            <p> In an operating system that uses paging for memory management, a page replacement algorithm is needed
+              to
+              decide which page needs to be replaced when a new page comes in. .</p>
+            <p> The operating system keeps track of all pages in the memory in a queue, the oldest page being the
+              first
+              one.
+              When a page needs to be replaced page in the front of the queue is selected for removal.</p>
+          </div>
+          <p class="link2"><a href="P4Sim.html"> Use the simulator now!! </a></p>
+        </div>
+      </div>
+
+    </section>
+    <div class="ending">        
+      <br>
+      <br>
+      <h1>Thanks For Learning With Us!!</h1>
+      <br>
+      <br>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

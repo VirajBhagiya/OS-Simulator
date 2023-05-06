@@ -1,0 +1,47 @@
+.mainbody {
+    background-image: url(../images/cd.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.minfo {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ialgoleft {
+    background-color: black;
+    color: #cccccc;
+    opacity: 0.8;
+    width: 40%;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.ialgoright {
+    background-color: black;
+    color: #cccccc;
+    opacity: 0.8;
+    width: 40%;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 60%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #282634;
+}

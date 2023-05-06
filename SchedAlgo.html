@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Scheduling Algorithms in Operating Systems</title>
+	<link rel="stylesheet" href="SchedAlgo.css">
+</head>
+
+<body class="mainbody">
+	<div class="minfo">
+		<h1><u>Scheduling Algorithms in Operating Systems</u></h1>
+		<div class="ialgoleft">
+			<h2>1. First-Come, First-Served (FCFS)</h2>
+			<p>In this scheduling algorithm, jobs are executed on a first come, first serve basis irrespective of burst
+				time
+				or priority. It is both a preemptive and non-preemptive scheduling algorithm. It is based on the First
+				In
+				First Out (FIFO) queue.
+			</p>
+		</div>
+		<div class="ialgoright">
+			<h2>2. Shortest Job First (SJF)</h2>
+			<p>Also known as shortest job first (SJF), this scheduling algorithm is both a non-preemptive and preemptive
+				scheduling algorithm. Process with the minimum burst time at an instance executes first. It is very
+				efficient in minimizing the waiting time and is easy to implement in Batch systems. It cannot be
+				implemented
+				if the required CPU time is not known in advance.
+			</p>
+		</div>
+		<div class="ialgoleft">
+			<h2>3. Priority Scheduling</h2>
+			<p>This scheduling algorithm is commonly used in batch systems and is a non-preemptive scheduling algorithm.
+				In
+				this each process is assigned a priority and the process with the highest priority executes first
+				followed
+				by the ones lower in priority. If two processes share the same priority then execution is done on a
+				first
+				come first served basis. Priority is decided based on memory requirements, time requirements, or any
+				other
+				resource requirement.
+			</p>
+		</div>
+		<div class="ialgoright">
+			<h2>4. Shortest Remaining Time</h2>
+			<p>This scheduling algorithm is the preemptive version of the SJN algorithm. The OS allocates the
+				processor to
+				the job that is closest to completion. Though there is a chance of this job being preempted, if
+				another job
+				is ready with a shorter time to completion. It is used in batch environments where short jobs are
+				given
+				preference and cannot be implemented in interactive systems where required CPU time is unknown.
+			</p>
+		</div>
+		<div class="ialgoleft">
+			<h2>5. Round Robin (RR)</h2>
+			<p>This scheduling algorithm is a preemptive process scheduling algorithm where each process is provided
+				a fixed
+				time to execute. This fixed time is called a quantum.It uses context switching to save states of
+				preempted
+				processes. Once a process is done executing for a given time period, it is preempted and another
+				process
+				executes for a given time period.
+			</p>
+		</div>
+		<div class="ialgoright">
+			<h2>6. Multiple-Level Queues Scheduling</h2>
+			<p>In this scheduling algorithm multiple algorithms with common characteristics come together to form a
+				group
+				and then schedule jobs as a whole. Thus, it is not an independent scheduling algorithm. There are
+				multiple
+				queues for processes with common characteristics and each queue has its own scheduling algorithms.
+				The OS
+				assigns priorities to each queue.
+			</p>
+		</div>
+		<div class="ialgoleft">
+			<h2>7. Multilevel Feedback Queues Scheduling</h2>
+			<p>This scheduling algorithm is similar to multilevel queue scheduling except that the processes here
+				can change
+				their queue too i.e., if a process is in queue1, then after partial execution, it can switch to
+				queue2.
+
+				There is a list of queues with different priorities and one with a higher priority queue executes
+				first.
+				During execution of a process with a higher priority queue comes, then the execution of the lower
+				priority
+				queue stops and the one with higher priority queue replaces it. There is a chance of starvation if
+				the
+				higher priority queue keeps coming in the ready state and the lower priority queue keeps waiting for
+				its
+				turn.
+			</p>
+		</div>
+		<div class="ialgoright">
+			<h2>8. Highest Response Ratio Next</h2>
+			<p>In this scheduling algorithm, scheduling is done on the basis of response ratio. The process with the
+				highest
+				response ratio is scheduled next which reduces starvation in the system.
+			</p>
+		</div>
+	</div>
+</body>
+
+</html>
