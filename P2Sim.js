@@ -9,12 +9,12 @@ function startSimulation() {
     if (n < 2) {
         alert("Minimum number of philosophers is 2");
         return false;
-    } else if (t1 <= 0) {
-        alert("Time gap can't be 0 or negative");
-        return false;
-    } else if (t2 <= 0) {
-        alert("Eatinng time should be greater than 0");
-        return false;
+    // } else if (t1 <= 0) {
+    //     alert("Time gap can't be 0 or negative");
+    //     return false;
+    // } else if (t2 <= 0) {
+    //     alert("Eatinng time should be greater than 0");
+    //     return false;
     } else if (isNaN(n) || isNaN(t1) || isNaN(t2)) {
         alert("Please fill all the details");
         return false;
